@@ -10,3 +10,15 @@ elif (coord[0] == 'b' or coord[0] == 'd' or coord[0] == 'f' or coord[0] == 'h') 
     print('чёрная')  
 else:
     print('белая')
+
+min = int(input('Кол-во минут: '))   
+lim_min = 200
+sms = int(input('Кол-во смс: '))
+lim_sms = 50
+total_sum = 350
+if min > lim_min: 
+    total_sum += (min - lim_min)*1.25
+    print(total_sum)
+if sms > lim_sms:
+    total_sum += (sms - lim_sms)*5  
+    print(total_sum)  
